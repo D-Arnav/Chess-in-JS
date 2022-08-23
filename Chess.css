@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+}
+
+*, *::after, *::before {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+	cursor: default;
+}
+
+.chessboard {
+    width: 640px;
+    height: 640px;
+    margin: 20px;
+    border: 6px solid #333;
+}
+
+.black {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(146, 148, 127);
+    font-size: 50px;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.white {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(251, 255, 212);
+    font-size: 50px;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.color{
+    color: rgba(243, 251, 0, 0.278);
+}
+
+.rank{
+    white-space: nowrap;
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    font-family: 'ＭＳ Ｐゴシック';
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.file{
+    white-space: nowrap;
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    font-family: 'ＭＳ Ｐゴシック';
+    font-weight: bold;
+    margin-top: 618px;
+}
+
+.legalMove{ 
+    white-space: nowrap;
+    border-radius: 50%;
+    border: 2px solid rgba(243, 251, 0, 0.278);
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 28px;
+    left: 28px;
+    background-color: rgba(0, 255, 0, 0.278);    
+}
+
+.promoteSelectWhiteWrapper{  
+    z-index: 3;
+    white-space: nowrap;
+    position: absolute;
+    float: left;
+    width: 240px;
+    height: 60px;
+    background-color: rgb(214, 217, 179);
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.box{
+    float: left;
+    width: 60px;
+    height: 60px;
+    box-shadow: inset 0 0 0 1px rgb(0, 0, 0);
+}
