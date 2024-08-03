@@ -42,7 +42,7 @@ Add special moves such as <i>enpassant</i>, castle, long castle, pawn promotion
 <h4>Key Point 3</h4>
 For every move, check for legality, see if the move checks the king, or if the game is won.
 
-<h2>Problems and Solutions</h2>
+<h2>Developer Notes: Some Problems and Solutions</h2>
 
 <h4>Problem</h4>
 Castle cannot be done when a king moves once, this means that for the same board state, a move may or may not be possible. A similar but more challenging problem is also present for enpassant.
@@ -62,7 +62,7 @@ create an isCheck() function to detect if the board is in a checked state, and a
 <h2>Setup Instructions</h2>
 <ol>
   <li>Create any directory on your computer</li>
-  <li>Download the 3 program files: Chess.html, Chess.css, Chess.js and place them in the directory</li>
+  <li>Download the 3 program files: index.html, Chess.css, Chess.js and place them in the directory</li>
   <li>Download all the png images in Chess Pieces, and create a directory called Chess Pieces within the previously created one and store all the images there</li>
-  <li>Find the Chess.html file on your computer and right click and open it with a browser such as Chrome</li>
+  <li>Find the index.html file on your computer and right click and open it with a browser such as Chrome</li>
 </ol>
